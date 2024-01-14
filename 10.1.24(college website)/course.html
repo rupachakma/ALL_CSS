@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- header section start -->
+    <section class="sub_header">
+        <nav>
+            <a href="index.html"><img src="./image/logo.png" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <i class="fa-solid fa-xmark" onclick="hideSidebar()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+ <!-- header section end -->
+
+<!-- Course section start -->
+<section class="course-area">
+    <div class="course">
+        <h1>Course We Offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae numquam iste... </p>
+
+    <div class="course-row col-wrap">
+        <div class="course-col ">
+            <img src="./image/national-cancer-institute-N_aihp118p8-unsplash.jpg" alt="">
+            <h3>Education program</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis tenetur dolores...</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="course-col">
+            <img src="./image/jerry-wang-jfnUC7s3iuw-unsplash.jpg" alt="">
+            <h3>Lab Program</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis tenetur dolores...</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="course-col">
+            <img src="./image/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" alt="">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis tenetur dolore...</p>
+            <a href="#">Learn More</a>
+        </div>
+        
+    </div>
+    <div class="course-row">
+        <div class="course-col">
+            <img src="./image/md-duran-1VqHRwxcCCw-unsplash.jpg" alt="">
+            <h3>Degree</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis tenetur dolores....</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="course-col">
+            <img src="./image/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" alt="">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis tenetur dolores...</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Course section start -->
+
+<!-- Facilities section start -->
+<section class="facilities-section">
+    <div class="facilities-area">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi perferendis pariatur temporibus modi.</p>
+        <div class="facilities-row">
+            <div class="facilities-col">
+                <img src="./image/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, similique...</p>
+                <a href="#">View More</a>
+            </div>
+            <div class="facilities-col">
+                <img src="./image/basketball.png" alt="">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, similique...</p>
+                <a href="#">View More</a>
+            </div>
+            <div class="facilities-col">
+                <img src="./image/cafeteria.png" alt="">
+                <h3>Tasty and Healthy food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, similaique...</p>
+                <a href="#">View More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Facilities section end -->
+
+<!-- footer section start -->
+<section class="footer">
+    <h4>About Us</h4>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus accusantium nobis quo error.</p>
+    <div class="footer-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i>by Rupa Chakma</p>
+</section>
+<!-- footer section end -->
+
+ <!-- Javascript for Toggle Menu -->
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'block'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+ </script>
+</body>
+</html>

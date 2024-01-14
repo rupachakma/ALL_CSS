@@ -1,0 +1,200 @@
+@media only screen and (min-width: 2560px){
+    header{
+        height: 50vh;  
+    }
+    header .nav{
+        display: flex;
+        justify-content: center;
+        gap: 600px;
+    }
+    .header-content h1{
+        font-weight: bolder;
+        font-size: 50px;
+        padding: 30px 0;
+    }
+    .main{
+        gap: 60px;
+        margin-top: 50px;
+    }
+    .about-section img{
+        left: 800px;
+        position: absolute;
+    }
+    .about-section .about-content{
+        width: 30%;
+        top:180px;
+        left: 40%;
+    }
+}
+@media only screen and (max-width: 1440px){
+    header{
+        padding-bottom: 30px;
+    }
+    .header-content h1{
+        font-weight: bolder;
+        font-size: 50px;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 1024px){
+    header{
+        height: 80vh;  
+    }
+    .header-content h1{
+        padding-bottom: 20px;
+    }
+    .about-section{
+        height: 450px;
+    }
+    .about-section img{
+        left: 80px;
+        position: absolute;
+    }
+    header button{
+        margin-top: 10px;
+    }
+    .about-section .about-content{
+        width: 62%;
+        height: 15rem;
+        padding: 30px;
+        top:220px;
+        left: 30%;
+    }
+    .about-section p{
+        padding: 10px 0;
+    
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .main{
+        flex-direction: column;
+    }
+    .main .card{
+        width: 90%;
+        padding: 10px;
+        height: auto;
+        display: block;
+        margin-inline: auto;
+    }
+    header{
+        height: 60vh;  
+    }
+    header .nav{
+        padding: 10px 100px;
+    }
+    .header-content h1{
+        font-weight: 400;
+        font-size: 2rem;
+        padding: 30px 0 15px;
+    }
+    .about-section{
+        height: 380px;
+        width: 100vw;
+        padding: 10px ;
+        position: relative;
+    }
+    .about-section img{
+        height: 220px;
+        width: 220px;
+        object-fit: cover;
+        border-radius: 50%;
+        position: absolute;
+        left: 50px;
+    }
+    .about-section .about-content{
+        height: 14rem;
+        width: 70%;
+        padding: 20px 20px 20px 50px ;
+        position: absolute;
+        top:150px;
+        left: 25%;
+        border-radius: 0 80px;
+       
+    }
+    .about-section p{
+        padding: 10px 0;
+        letter-spacing: 1px;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+    header{
+        height: 50vh;  
+    }
+    .header-content h1{
+        padding: 10px 0;
+        margin: 0;
+    }
+    header button,.about-content button{    
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    header .nav{
+        justify-content: space-around;
+        padding:20px 0;
+    }
+    .about-section{
+        height: 440px;
+        width: 100vw;
+        padding: 10px ;
+        position: relative;
+    }
+    .about-section img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        position: absolute;
+        left: 110px;
+    }
+    .about-section .about-content{
+        height: 16rem;
+        width: 90%;
+        padding: 10px;
+        position: absolute;
+        top:180px;
+        left: 18px;
+        border-radius:0;
+        text-align: center;
+    }
+    .about-section p{
+        padding: 10px 20px;
+
+    }
+}
+@media only screen and (max-width: 375px){
+    header{
+        height: 47vh;  
+    }
+    .header-content h1{
+        font-weight: 400;
+        font-size: 1.5rem;
+        padding: 5px 0;
+    }
+    header .nav{
+        justify-content: space-evenly;
+        padding: 20px 0;
+        margin: 0;
+    }
+    header button,.about-content button{    
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    .about-section{
+        height: 420px;
+        margin-bottom: 20px;
+    }
+    .about-section img{
+        left: 80px;
+    }
+    .about-content h1{
+        font-weight: 400;
+        font-size: 2rem;
+    }
+   
+    .about-section .about-content{
+        height: 17rem;
+    }
+}

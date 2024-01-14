@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- header section start -->
+    <section class="sub_header">
+        <nav>
+            <a href="index.html"><img src="./image/logo.png" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <i class="fa-solid fa-xmark" onclick="hideSidebar()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+        </nav>
+        <h1 class="blog-header-title">Contact Us</h1>
+    </section>
+ <!-- header section end -->
+
+<!-- Contact section start -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3625442200696!2d90.36487679999999!3d23.8057038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1a2baed8011%3A0xdb4dfd8ce0ce80fc!2sHotel%20Prime%20Inn%20Guest%20House!5e0!3m2!1sen!2sbd!4v1705200912338!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact">
+    <div class="contact-row">
+        <div class="contact-col-left">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <span> 
+                    <h5>XYZ Road, ABC Buiding</h5>
+                    <p>Dhaka, Bangladesh</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span> 
+                    <h5>+880 1856478955</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span> 
+                    <h5>info@rupa.com</h5>
+                    <p>Email us for any query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name " required> 
+                <input type="email" placeholder="Enter Email Address " required>
+                <input type="text" placeholder="Enter Your Subject " required>
+                <textarea name="" id="" cols="" rows="5" placeholder="message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Contact section end -->
+
+
+<!-- footer section start -->
+<section class="footer">
+    <h4>About Us</h4>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus accusantium nobis quo error.</p>
+    <div class="footer-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i>by Rupa Chakma</p>
+</section>
+<!-- footer section end -->
+
+ <!-- Javascript for Toggle Menu -->
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'block'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+ </script>
+</body>
+</html>
