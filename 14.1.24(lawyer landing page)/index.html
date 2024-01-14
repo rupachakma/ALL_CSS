@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="header">
+        <div class="logo">
+            <img src="./image/Logo.png" alt="">
+        </div>
+        <nav class="nav-links">
+            <ul class="nav-item">
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">TESTIMONIALS</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">TERMS</a></li>        
+            </ul>    
+        </nav>
+        <div class="search-bar">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+
+
+
+        <div class="sidebar">
+            <i class="fa-solid fa-xmark" onclick="hideSidebar()"></i>
+            <ul>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">TESTIMONIALS</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">TERMS</a></li>
+            </ul>
+            
+        </div>
+        <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+
+    </section>
+
+<!-- hero section start -->
+    <section class="hero">
+        <div class="hero-img-sec">
+            <div class="hero-img">
+                
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Your Solution Legal Consultacy</h1>
+            <p class="hero-para">We are here to help you take care of your legality 
+                with the best service especially for you.</p>
+
+            <a href="" class="btn">GET STARTED</a>
+            <p class="trust">Trusted by 10+ companies in indonesia</p>
+            <div class="company-logo">
+                <a href=""><img src="./image/Airbnb Logo.png" alt=""></a>
+                <a href=""><img src="./image/Hubspot Logo.png" alt=""></a>
+            </div>
+            <div class="company-logo">
+                <a href=""><img src="./image/Microsoft Logo.png" alt=""></a>
+                <a href=""><img src="./image/Google Logo.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!-- Javascript for Toggle Menu -->
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'block'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+ </script>
+</body>
+</html>
